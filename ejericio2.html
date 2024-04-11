@@ -1,0 +1,45 @@
+<HTML>
+   <center> <h2>Formulario de reserva de viaje</h2>
+    <p><strong>*</strong> denota campos obligatorios</p>
+<!-- se procede a crear el formulario -->
+    <form>
+      <label for="fullname">Nombre completo*: <br>
+      <input type="text" id="fullname" name="fullname" required></label><br>
+      
+      <label for="email">Dirección de correo electrónico*: <br>
+      <input type="email" id="email" name="email" required></label><br>
+      
+      <label for="tourpackage">Seleccione paquete de viaje*: <br>
+      <select id="tourpackage" name="tourpackage" required>
+        <option value="goa">Goa</option>
+      </select></label><br>
+      
+      <label for="arrivaldate">Fecha de llegada*: <br>
+      <input type="text" id="arrivaldate" name="arrivaldate" placeholder="m/d/y" required></label><br>
+      
+      <label for="numofpersons">Número de personas*: <br>
+      <input type="text" id="numofpersons" name="numofpersons" required></label><br>
+      
+      <label for="avail">¿Qué desea reservar?*: <br>
+      <input type="checkbox" id="avail1" name="avail" value="Boarding">
+      <label for="avail1">Alojamiento</label><br>
+      <input type="checkbox" id="avail2" name="avail" value="Fooding">
+      <label for="avail2">Comidas</label><br>
+      <input type="checkbox" id="avail3" name="avail" value="Sightseeing">
+      <label for="avail3">Visitas turísticas</label><br>
+      </label><br>
+      
+      <label for="couponcode">Código de cupón: <br>
+      <input type="text" id="couponcode" name="couponcode"></label><br>
+      
+      <label for="terms">Términos y condiciones*: <br>
+      <input type="radio" id="terms1" name="terms" value="agree" required>
+      <label for="terms1">Estoy de acuerdo</label><br>
+      <input type="radio" id="terms2" name="terms" value="disagree">
+      <label for="terms2">No estoy de acuerdo</label><br>
+      </label><br>
+      
+      <input type="submit" value="Completar reserva">
+    </form>
+</center>
+</HTML>
